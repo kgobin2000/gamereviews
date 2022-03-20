@@ -1,4 +1,7 @@
+import "react-native-gesture-handler";
 import React, { useState } from "react";
+import { AppNavigator } from "./routes/drawer";
+
 import Home from "./screens/home";
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
@@ -13,7 +16,7 @@ const getFonts = () =>
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
   if (fontsLoaded) {
-    return <Navigator />;
+    return <AppNavigator />;
   } else {
     return <AppLoading startAsync={getFonts} onFinish={() => setFontsLoaded(true)} onError={() => console.log("error")} />;
   }
