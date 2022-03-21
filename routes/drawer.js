@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeStack from "./homeStack";
 import AboutStack from "./aboutStack";
+import { Ionicons } from "@expo/vector-icons";
 
 const Drawer = createDrawerNavigator();
 
@@ -15,7 +16,7 @@ export const AppNavigator = () => (
         component={HomeStack}
         options={{
           title: "Home",
-          headerTitle: "Game Reviews"
+          headerShown: false
         }}
       />
       <Drawer.Screen
