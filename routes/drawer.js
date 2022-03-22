@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, ImageBackground, Image } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeStack from "./homeStack";
 import AboutStack from "./aboutStack";
@@ -24,7 +24,7 @@ export const AppNavigator = () => (
         component={AboutStack}
         options={{
           title: "About",
-          headerTitle: "About Game Reviews"
+          headerTitle: "About Game-Reviews"
         }}
       />
     </Drawer.Navigator>

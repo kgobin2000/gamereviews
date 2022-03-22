@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Image, StyleSheet } from "react-native";
 import About from "../screens/about";
 
 const Stack = createNativeStackNavigator();
@@ -15,7 +16,7 @@ export default function AboutStack() {
         name="About"
         component={About}
         options={{
-          title: "About Game Reviews"
+          title: "About Game Review"
         }}
       />
     </Stack.Navigator>
